@@ -1,5 +1,4 @@
 const router = require('express').Router()
-const { findByIdAndUpdate } = require('../models/pokestop')
 const Pokestop = require('../models/pokestop')
 
 router.get('/', async (req, res) => {
