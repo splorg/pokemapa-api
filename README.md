@@ -24,8 +24,10 @@ Acesse a API em `http://localhost:3000/pokestops`
 1. Clone o repositório
 2. Na pasta raíz do projeto, execute o comando ```npm install```
 3. Crie um arquivo .env com as variáveis de ambiente, seguindo o exemplo do arquivo .env.template:
-`DATABASE_URI=<string de conexão para um banco de dados MongoDB>`
-`PORT=<porta em que o servidor será exposto>`
+```bash
+DATABASE_URI=<string de conexão para um banco de dados MongoDB>
+PORT=<porta em que o servidor será exposto>
+```
 4. Execute o comando `npm start`
 
 Você pode agora acessar a API em localhost na porta que você definiu no .env (se não definir uma porta, será utilizada a 3000).
