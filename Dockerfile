@@ -1,13 +1,11 @@
 FROM node
 
-ARG db
-
-ENV DATABASE_URI $db
-
 WORKDIR /app
 
-COPY . .
+COPY ["package.json", "package-lock.json*", "./"]
 
 RUN npm install
 
-CMD node index.js
+COPY . .
+
+CMD ["npm", "start"]
