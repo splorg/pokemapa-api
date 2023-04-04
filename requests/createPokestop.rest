@@ -1,8 +1,0 @@
-POST http://localhost:3000/pokestops
-Content-Type: application/json
-
-{
-  "name": "Teste",
-  "latitude": "lat40028922",
-  "longitude": "lon40028922"
-}
