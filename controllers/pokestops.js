@@ -3,7 +3,7 @@ const { findByIdAndUpdate } = require('../models/pokestop')
 const Pokestop = require('../models/pokestop')
 
 router.get('/', async (req, res) => {
-    const pokestops = await Pokestop.findAll()
+    const pokestops = await Pokestop.find({})
 
     res.json(pokestops)
 })
