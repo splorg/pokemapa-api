@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 require('express-async-errors')
 const mongoose = require('mongoose')
 const config = require('./config')
@@ -14,6 +15,7 @@ try {
     console.log('Erro ao conectar com o banco de dados:', err.message)
 }
 
+app.use(cors())
 app.use(express.json())
 
 app.use('/pokestops', pokestopRouter)
