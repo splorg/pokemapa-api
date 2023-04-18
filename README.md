@@ -18,7 +18,7 @@ cd pokemapa-api
 # Executa o docker-compose
 docker compose up -d
 ```
-Acesse a API em `http://localhost:3000/pokestops`
+Acesse a API em `http://localhost:3000/`
 
 ## Como executar o projeto localmente
 É necessário o Node.js instalado e um banco de dados MongoDB disponível.
